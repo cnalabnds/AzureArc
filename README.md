@@ -1,3 +1,5 @@
+<B>NOTE: Content taken from https://github.com/Azure/arc-helm-demo <b>
+
 ---
 page_type: sample
 languages:
