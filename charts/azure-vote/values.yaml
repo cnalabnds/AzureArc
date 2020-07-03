@@ -3,6 +3,8 @@
 title: "Azure Vote App for Azure Arc"
 value1: Jeveen
 value2: Subash
+value2: Narendra
+
 
 # Service controlls
 serviceNameFront: azure-vote-front
