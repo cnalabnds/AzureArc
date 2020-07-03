@@ -52,7 +52,7 @@ if app.config['SHOWHOST'] == "true":
 # Init Redis
 if not r.get(button1): r.set(button1,0)
 if not r.get(button2): r.set(button2,0)
-if not r.get(button2): r.set(button3,0)
+if not r.get(button3): r.set(button3,0)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -62,7 +62,7 @@ def index():
         # Get current values
         vote1 = r.get(button1).decode('utf-8')
         vote2 = r.get(button2).decode('utf-8')
-        vote2 = r.get(button3).decode('utf-8')
+        vote3 = r.get(button3).decode('utf-8')
 
         # Return index with values
         return render_template("index.html", value1=int(vote1), value2=int(vote2), value3=int(vote3), button1=button1, button2=button2, button3=button3, title=title)
