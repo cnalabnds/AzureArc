@@ -60,3 +60,5 @@ spec:
           value: {{ .Values.value1 }}
         - name: VOTE2VALUE
           value: {{ .Values.value2 }}
+        - name: VOTE3VALUE
+          value: {{ .Values.value3 }}
